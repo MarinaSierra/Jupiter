@@ -10,5 +10,10 @@ public class Main
 		
 		System.out.println("Dame el numero de terminos");
 		nterminos=sc.nextInt();
+		Sucesion fibonacci;
+		
+		fibonacci=new Sucesion(nterminos);
+		
+		System.out.print(fibonacci.calculo());
 	}
 }
