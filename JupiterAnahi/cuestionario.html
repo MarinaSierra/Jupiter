@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Ejercicio tipo examen 1</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Marina Sierra"/>
+		<style>
+		body{
+		font-family:Monospace;}
+		
+		table{
+		width:100%;
+		height:100px;
+		background-color:#A4A9A7;}
+		
+		legend{
+		font-size:32px}
+		
+		fieldset{
+		width:70%;
+		margin:auto;}
+		
+		legend{
+		background-color:lavender;
+		font-size:20px;}
+		</style>
+	</head>
+	
+	<body>
+		<form name="Aprendoformularios" action="Envio.html" 
+		enctype="multipart/form-data" 
+		method="post">
+		
+		<fieldset style="background-color:white">
+			<table>
+				<tr>
+					<td rowspan="5"><img src="bono.png"/></td>
+					<th style="font-size:40px">SOLICITUD BONO CULTURAL</th>
+					<td>
+						<table>
+							<tr>
+								<td>
+								<a href="https://www.instagram.com/comunidadmadrid/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="instagram.png"/></a>
+								</td>
+								<td>
+								<a href="https://www.facebook.com/ComunidadMadrid/?locale=es_ES"><img src="facebook.png"/></a>
+								</td>
+							</tr>
+								
+							<tr>
+								<td>
+								<a href="https://www.comunidad.madrid/"><img src="madrid.png"/></a>
+								</td>
+								<td>
+								<a href="https://x.com/ComunidadMadrid?s=20"><img src="twitter.png"/></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos personales</legend>
+			<table>
+				<tr>
+					<td>
+						<label>Tratamiento
+							<select>
+								<option value="1">--Seleccione--</option>
+								<option value="2">Mujer</option>
+								<option value="3">Hombre</option>
+							</select>
+						</label>
+					</td>
+					
+					<td>
+						<label>Nombre*: <input type="text" required="required" name="nombre"/></label>
+					</td>
+					
+					<td>
+						<label>Apellidos*: <input type="text" required="required" name="apellidos"/></label>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<label>NºDoc*: <input <input type="text" pattern="[0-9]{8}[A-Z]{1}"/></label>
+					</td>
+					<td>
+						<label>Tipo de Doc: 
+						
+							<select>
+							
+								<option value="1">--Seleccione--</option>
+								<option value="2">DNI</option>
+								<option value="3">NIE</option>
+								<option value="3">Pasaporte</option>
+								
+							</select>
+							
+						</label>
+					</td>
+					
+					<td>
+						<label>Fecha de nacimiento*: <input type="date" name="fecha" min="2005-01-01" max="2005-12-31"/></label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="3">
+					<label>Adjunte historial académico <input type="file" name="archivo"/></label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos postales</legend>
+		
+			<table>
+				<tr>
+					<td>
+						<label>Tipo de Via<br>
+						
+							<select>
+							
+								<option value="1">--Seleccione--</option>
+								<option value="2">Calle</option>
+								<option value="3">Avenida</option>
+								<option value="3">Plaza</option>
+								
+							</select>
+							
+						</label>
+					</td>
+					<td>
+						<label>Dirección*: <input type="text"/></label>
+					</td>
+					<td>
+						<label>Número:<br><input type="number"/></label>
+					</td>
+					<td>
+						<label>Piso:<br><input type="text"/></label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+					
+						<label>Télefono Móvil*: <img src="viber.png"/><br>
+						<input type="tel" pattern="[0-9]{9}"/>
+						</label>
+					
+					</td>
+					
+					<td colspan="2">
+					
+						<label>Dirección e-mail*: <img src="email.png"/><br>
+						<input type="email"/>
+						</label>
+					
+					</td>
+				</tr>
+
+			</table>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos Académicos</legend>
+		
+			<table>
+				<tr>
+					<td style="font-size:">
+						<label>CICLO:<br>
+						
+							<select style="width:120px">
+							
+								<option value="1">--Seleccione--</option>
+								<option value="2">2ºBachillerato</option>
+								
+								<optgroup label="Grado superior">
+									<option value="1">
+									Técnico Superior en Administración y Finanzas
+									</option>
+									<option value="1">
+									Técnico Superior en Educación Infantil
+									</option>
+									<option value="1">
+									Técnico Superior en Integración Social
+									</option>
+									<option value="1">
+									Técnico Superior en Enseñanza y Animación Sociodeportiva
+									</option>
+									<option value="1">
+									Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+									</option>
+									<option value="1">
+									Técnico Superior en Administración de Sistemas Informáticos en Red
+									</option>
+									<option value="1">
+									Técnico Superior en Sistemas Electrotécnicos y Automatizados
+									</option>
+								</optgroup>
+								
+								<optgroup label="Carrera universitaria">
+									<option value="1">Medicina</option>
+									<option value="1">Aeronautica</option>
+									<option value="1">Computación</option>
+									<option value="1">Tecnologías industriales</option>
+									<option value="1">Informática</option>
+									<option value="1">Telecomunicaciones</option>
+									<option value="1">Ingeniería de la energía</option>
+								</optgroup>
+								
+							</select>
+							
+						</label>
+					</td>
+					
+					<td>
+						<label>ELIGE CURSO:<br>
+						<input type="radio" name="boton"/> Primero
+						<input type="radio" name="boton"/> Segundo
+						</label>
+					</td>
+					<td>
+						<label>ELIGE TURNO:<br>
+							<input type="radio" name="botun"/> Diurno
+							<input type="radio" name="botun"/> Vespertino
+						</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos de interés</legend>
+		
+			<table>
+				<tr>
+					<td>
+					¿Quisiera tener en cuenta a otra persona?
+					</td>
+					<td>
+						<label><br>
+							<input type="radio" name="botin"/>SI
+							<input type="radio" name="botin"/> NO
+						</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>AFICIONES
+						<label>
+							<input type="checkbox" name="lectura"/>Lectura
+							<input type="checkbox" name="videojuegos"/>Videojuegos
+							<input type="checkbox" name="deporte"/>Deporte
+							<input type="checkbox" name="otro"/>Otro<input type="text" name="otro"/>
+						</label>
+					</td>
+					
+					<td>SERIES FAVORITAS
+						<label>
+							<input type="checkbox" name="got"/>Juego de tronos
+							<input type="checkbox" name="TO"/>The office
+							<input type="checkbox" name="blackmirror"/>Black mirror
+							<input type="checkbox" name="otro"/>Otra<input type="text" name="otro"/>
+						</label>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+					MÁS INFORMACIÓN EN: 
+						<ol start="I">
+							<li><a href="BonoCultural.pdf" target="Frame">BONO CULTURAL</a>
+							</li>
+							<li><a href="instrucciones.pdf" target="Frame">MINISTERIO DE CULTURA Y DEPORTE-BONO CULTURAL
+							</li>
+						</ol>
+					</td>
+					<td rowspan="4"><iframe style="width:100%; height:100%" name="Frame"></iframe>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+					<label>Pulsa "Continuar" conlleva la aceptacion de la expresa de la <a href="clausula.pdf" target="Frame">Clasula protección de datos.</a></br><input type="submit" value="Continuar"></label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+					(*)Los campos marcados con asterisco son obligatorios.
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		</form>
+		
+	</body>
+
+</html>
